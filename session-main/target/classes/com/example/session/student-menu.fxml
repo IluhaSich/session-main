@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.session.StudentMenu">
+   <children>
+      <Label fx:id="lbl_info" layoutX="9.0" layoutY="6.0" prefHeight="31.0" prefWidth="569.0" text="Вы вошли как студент" />
+      <Button fx:id="btn_passExam" layoutX="312.0" layoutY="328.0" mnemonicParsing="false" onAction="#go_back" prefHeight="40.0" prefWidth="249.0" text="Сдать экзамен по выбранному предмету" />
+      <Button fx:id="btn_back" layoutX="31.0" layoutY="328.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="88.0" text="Выйти" />
+      <TableView fx:id="table_subjects" layoutX="131.0" layoutY="37.0" prefHeight="239.0" prefWidth="361.0">
+        <columns>
+          <TableColumn fx:id="col_subject" prefWidth="99.0" text="Предмет" />
+          <TableColumn fx:id="col_teacherName" prefWidth="134.0" text="Преподаватель" />
+            <TableColumn fx:id="col_Data" prefWidth="127.0" text="Дата проведения" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
